@@ -22,6 +22,7 @@
 				<p>College students move around quite a bit so one goal would be to quickly get the weather conditions for their current location as they head off to class or study. They are also often far from their homes so the ability to quickly get the conditions for a specific location is important as well.  The third goal deals with planning for travels...the ability to get weather conditions for any location will help with last minute packing for road trips.</p>
 			<h3>Personas</h3>
 				<img src="weather-site-plan/plan-images/plan-images/cool-joe.jpg" alt="cool-joe">
+			<ul>
 				<li><strong>Name:</strong>Joe Cool</li>
 		
 				<li><strong>Occupation:
@@ -34,9 +35,9 @@
 				<li><strong>Motivation:</strong>Joe is not into planning.  His last minute scrambling, whether it is getting to class in the morning or heading out on his latest adventure, has left him unprepared for weather conditions many times (He is tired of sleeping in the rain and snow).  He would like to be more prepared...without having to put much effort into it...or planning.</li>
 			
 				<li><strong>Enviorment:</strong>Joe is comfortable using laptops and Mobile devices, he will most often be found on a smart phone however.  Many of the places he frequents do not have great signal…he is often dealing with 3G speeds.</li>
-		
+		</ul>
 				<img src="weather-site-plan/plan-images/plan-images/lucy.jpg" alt="lucy">
-		
+		<ul>
 				<li><strong>Name:</strong>Lucy Van Pelt</li>
 		
 				<li><strong>Occupation:</strong>student</li>
@@ -48,14 +49,18 @@
 				<li><strong>Motivation:</strong>: Lucy is a no nonsense young lady who likes to help those around her.  She wants easy access to the weather conditions for many locations so that she can always be prepared to offer some unsolicited advice to her peers.</li>
 		
 				<li><strong>Enviorment:</strong> Lucy has a smart phone that she uses to keep her eye on her social media ‘friends’.  She is usually not very far from her trusty laptop however. Most of her time online is spent either on the University network or the apartment broadband.</li>
+		</ul>
 		<h2>Content</h2>
 			<p>All weather pages should include Location name, temperature, high, low, current weather descriptor, precipitation, and wind on small, and hourly temps should be added on larger screens. (See provided weather data file for more details)</p>
 			<h3>Pages</h3>
-				<ol><strong>Home:</strong> weather for the current location. Current location should be determined by using the Geolocation API of the browser. This information should be passed to the <a href="https://www.wunderground.com/weather/api/">WeatherUnderground API</a> to retrieve the current conditions. </ol>
+				<ol>
+					
+					<li><strong>Home:</strong> weather for the current location. Current location should be determined by using the Geolocation API of the browser. This information should be passed to the <a href="https://www.wunderground.com/weather/api/">WeatherUnderground API</a> to retrieve the current conditions. </li>
 		
-				<ol><strong>Franklin, Greenville, Springfield:</strong>weather for each specific location. The weather for The Franklin and Greenville pages should be pulled from a local JSON file that will be provided.  </ol>
+				<li><strong>Franklin, Greenville, Springfield:</strong>weather for each specific location. The weather for The Franklin and Greenville pages should be pulled from a local JSON file that will be provided.  </li>
 		
-		<ol><strong>Search:</strong>Begins with only a search box, characters entered will cause a list of suggested matches to appear.  Selected location will pull up the weather. The search term from the field should be sent to the <a href="https://www.wunderground.com/weather/api/d/docs?d=autocomplete-api&MR=1">WeatherUnderground autocomplete API</a>, and the results used to pull the current conditions for the selected location.</ol>
+		
+			<li><strong>Search:</strong>Begins with only a search box, characters entered will cause a list of suggested matches to appear.  Selected location will pull up the weather. The search term from the field should be sent to the <a href="https://www.wunderground.com/weather/api/d/docs?d=autocomplete-api&MR=1">WeatherUnderground autocomplete API</a>, and the results used to pull the current conditions for the selected location.</li></ol>
 		<h2>Styles</h2>
 			<h3>Branding</h3>
 				<p>The client provided the following initial concept for a name and logo: (You recognize that this logo could easily be re-created entirely with CSS using the right font and HTML entities… &#9856;  &#9861;)</p>
