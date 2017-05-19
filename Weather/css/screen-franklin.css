@@ -1,0 +1,38 @@
+*{
+	box-sizing: border-box; /* changes width property to total width, not contentent width*/
+}
+article{}
+aside{}
+footer{}
+header{}
+.title h1+h1{
+	text-align: right;
+	margin-top:-.7em
+}
+nav {
+	position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+section{}
+main {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+figcaption{}
+figure{
+	display: block; /*helps with older browsers*/
+}
+
+body{
+	margin: 0; /*remove any margin*/
+	padding:0;
+	background-color: salmon;
+}
+nav ul {
+	display: flex;
+	/*height: 100px;*/
+	line-height: 200%;
+}
