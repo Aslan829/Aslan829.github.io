@@ -5,10 +5,26 @@
 article{}
 aside{}
 footer{
+	background-color: #a6d8db;
 	font-family: helvetica, arial, sans-serif;
 	font-size: 1.6em
-	background-color: #a6d8db;
 }
+footer a:link{
+		text-decoration: none;
+		color:#47556f;
+	}
+	footer a:visited{
+		text-decoration: none;
+		color:#4a4653;
+	}
+	footer a:hover{
+		text-decoration: underline;
+		color:#e7ef61;
+	}
+	footer a:active{
+		text-decoration: none;
+		color:#a6d8db;
+	}
 header{
 	background-color: #a6d8db;
 }
