@@ -6,6 +6,9 @@
 		<meta name="description" content="Weather for Franklin ID">
 		<meta name ="viewport" content="width=device-width">
 		<link rel="stylesheet" type="text/css" href="css/screen-franklin.css">
+		<style>
+			@import url('https://fonts.googleapis.com/css?family=Sansita');
+		</style>
 	</head>
 	<body>
 		<header>
@@ -24,23 +27,25 @@
 			<img src="weather-site-plan/plan-images/plan-images/logo-blue.jpg" alt="logo">
 			<section class="overview">
 			<div class="title">
-				<h2> <span>&#9856;</span><span>&#9861;</span> Feeling Lucky?</h2>
-				<h2>Local Weather</h2>
+				<h2 class="big-head"> <span>&#9856;</span><span>&#9861;</span> Feeling Lucky?</h2>
+				<h2 class="small-head">Local Weather</h2>
 				</div>
 			</section>
 			<section class="cur_conditions">
-			<h2>Current Conditions</h2>
-				<h3>Wind</h3>
-					<p>1-5 MPH</p>
-				<h3>Precipitation</h3>
-					<p>0 in</p>
-			<br>
-			<img src="stock-photo-spring-field-with-dandelions-on-bright-sunny-day-129012389.jpg" alt="background-pic">
-			<h2>Franklin, ID</h2>
-				<h3>79</h3>
+				<h2>Franklin, ID</h2>
+				<h3 id="current-temp">79</h3>
 				
 				<p>&#9728; 90/66</p>
 			<h3>Sunny</h3>
+			<br>
+			</section>
+			<section class="cur_conditions">
+			<h2>Current Conditions</h2>
+				<h3>Wind:</h3>
+					<p>1-5 MPH</p>
+					<p>Southwest</p>
+				<h3>Precipitation:</h3>
+					<p>0 in</p>
 			<br>
 			</section>
 			<section class="hourly">

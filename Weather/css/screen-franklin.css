@@ -1,38 +1,101 @@
+
 *{
 	box-sizing: border-box; /* changes width property to total width, not contentent width*/
 }
 article{}
 aside{}
-footer{}
-header{}
+footer{
+	font-family: helvetica, arial, sans-serif;
+	font-size: 1.6em
+		background-color: #a6d8db;
+}
+header{
+	background-color: #a6d8db;
+}
 .title h1+h1{
 	text-align: right;
 	margin-top:-.7em
 }
+
+
 nav {
+	background-color: #f07c6c;
 	position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
 }
+	nav a:link{
+		text-decoration: none;
+		color:#47556f;
+	}
+	nav a:visited{
+		text-decoration: none;
+		color:#4a4653;
+	}
+	nav a:hover{
+		text-decoration: underline;
+		color:#e7ef61;
+	}
+	nav a:active{
+		text-decoration: none;
+		color:#a6d8db;
+	}
 section{}
 main {
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
+	background-image: url("sunny-winter.jpg");
+	background-size: cover;
 }
 figcaption{}
 figure{
 	display: block; /*helps with older browsers*/
+}
+	@import url('https://fonts.googleapis.com/css?family=Sansita');
+h1,h2,h3,h4,h5,h6 {
+	
+	font-family: sansita, charcoal, fantasy;
+}
+.small-head {
+	font-size: 1em
+	font
+}
+.big-head {
+	font-size: 2.5em;
+}
+.current-info{
+	font-size: 1.5em;
+}
+#current-temp{
+	font-size: 2.6em;
+}
+.rotate25 {
+    transform: rotate(25deg);
+    display: inline-block;
+}
+.cur_conditions{
+	font-size: 1.5em;
+	background-color: rgba(200,200,200,.6);
+	margin: .2em auto;
+	border: 1px solid;
+	border-radius: 5px;
+}
+.cur_conditions p{
+	font-weight: bold;
 }
 
 body{
 	margin: 0; /*remove any margin*/
 	padding:0;
 	background-color: salmon;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 20px;
 }
 nav ul {
 	display: flex;
 	/*height: 100px;*/
 	line-height: 200%;
+	font-size: 1.2em
 }
