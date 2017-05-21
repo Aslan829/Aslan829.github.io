@@ -7,7 +7,7 @@ aside{}
 footer{
 	font-family: helvetica, arial, sans-serif;
 	font-size: 1.6em
-		background-color: #a6d8db;
+	background-color: #a6d8db;
 }
 header{
 	background-color: #a6d8db;
@@ -24,6 +24,12 @@ nav {
     bottom: 0;
     left: 0;
     right: 0;
+	text-align: center;
+	
+}
+nav li{
+	text-align: center;
+	padding: 1px 1.5em
 }
 	nav a:link{
 		text-decoration: none;
@@ -72,19 +78,33 @@ h1,h2,h3,h4,h5,h6 {
 	font-size: 2.6em;
 }
 .rotate25 {
-    transform: rotate(25deg);
+    transform: rotate(30deg);
     display: inline-block;
 }
 .cur_conditions{
+	font-size: 1.5em;
+	background-color: rgba(200,200,200,.6);
+	padding: 1px 50px 15px 50px;
+	margin: .2em auto;
+	border: 1px solid;
+	border-radius: 5px;
+}
+.cur_conditions1{
 	font-size: 1.5em;
 	background-color: rgba(200,200,200,.6);
 	margin: .2em auto;
 	border: 1px solid;
 	border-radius: 5px;
 }
-.cur_conditions p{
-	font-weight: bold;
+.hourly{
+	font-size: 1.5em;
+	background-color: rgba(200,200,200,.6);
+	margin: .2em auto;
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 1px 50
 }
+
 
 body{
 	margin: 0; /*remove any margin*/
@@ -99,3 +119,7 @@ nav ul {
 	line-height: 200%;
 	font-size: 1.2em
 }
+.overview{
+	color: #fffff0
+}
+@media only screen
