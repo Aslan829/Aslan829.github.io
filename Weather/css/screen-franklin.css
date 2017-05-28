@@ -224,7 +224,7 @@
 		bottom: 0;
 		left: 0;
 		right: 0;
-		padding: px 100px px 0px;
+		padding: 0px 100px 0px 0px;
 		justify-content: center; 
 		justify-content: space-around;
 	
@@ -292,7 +292,7 @@
 		/*display: inline-block;*/
 	}
 	.cur_conditions {
-		width: %;
+	
 		font-size: 1.5em;
 		background-color: rgba(200, 200, 200, .6);
 		padding: 1px 50px 15px 50px;
