@@ -1,0 +1,185 @@
+@media only screen and (min-width: 750px) {
+	/*desktop*/
+	footer {
+		background-color: #a6d8db;
+		font-family: helvetica, arial, sans-serif;
+		font-size: 1.6em
+	}
+	footer a:link {
+		text-decoration: none;
+		color: #47556f;
+	}
+	footer a:visited {
+		text-decoration: none;
+		color: #4a4653;
+	}
+	footer a:hover {
+		text-decoration: underline;
+		color: #e7ef61;
+	}
+	footer a:active {
+		text-decoration: none;
+		color: #a6d8db;
+	}
+	header {
+		background-color: #a6d8db;
+	}
+	.title h1+h1 {
+		text-align: right;
+		margin-top: -.7em;
+	}
+	nav {
+		background-color: #f07c6c;
+		text-align: center;
+	}
+	nav ul {
+		display: flex;
+		justify-content: space-around;
+		font-size: 1.2em
+	}
+	nav li {
+		text-align: center;
+		
+	}
+	nav a:link {
+		text-decoration: none;
+		color: #47556f;
+	}
+	nav a:visited {
+		text-decoration: none;
+		color: #4a4653;
+	}
+	nav a:hover {
+		text-decoration: underline;
+		color: #e7ef61;
+	}
+	nav a:active {
+		text-decoration: none;
+		color: #a6d8db;
+	}
+	section {}
+	main {
+		display: flex;
+		flex-flow: column nowrap;
+		background-color: salmon;
+	}
+	figcaption {}
+	figure {
+		display: block;
+		/*helps with older browsers*/
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: sansita, charcoal, fantasy;
+	}
+	.big-head {
+		display: flex;
+		flex-direction: row;
+		font-size: 2.5em;
+	}
+	.current-info {
+		font-size: 1.5em;
+	}
+	#current-temp {
+		font-size: 2.6em;
+	}
+	.rotate25 {
+		transform: rotate(30deg);
+		/*display: inline-block;*/
+	}
+	.cur_conditions {
+		font-size: 1.5em;
+		background-color: rgba(200, 200, 200, .6);
+		padding: 1px 50px 15px 50px;
+		margin: .2em auto;
+		border: 1px solid;
+		border-radius: 5px;
+		align-self: center;
+		
+	}
+	
+	.cur_conditions1 {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		font-size: 1.5em;
+		background-color: rgba(200, 200, 200, .6);
+		border: 1px solid;
+		border-radius: 5px;
+		order: -1
+	}
+	.wind{
+		display: flex;
+		
+	}
+	.wind #wind-title{
+		display: flex; 
+		flex-direction: column;
+		justify-content: center; 
+		
+	}
+	.wind #wind-info{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	
+	}
+	.perc{
+		display:flex;
+	}
+	.perc #perc-info{
+		display: flex;
+		align-items: flex-end;
+	}
+	.hourly {
+		font-size: 1.5em;
+		background-color: rgba(200, 200, 200, .6);
+		border: 1px solid;
+		border-radius: 5px;
+		padding: 1px 50px 10px 50px;
+	}
+	body {
+		margin: 0;
+		/*remove any margin*/
+		padding: 0;
+		background-color: salmon;
+		font-family: helvetica, arial, sans-serif;
+		font-size: 20px;
+	}
+	.center {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-size: cover;
+		flex-grow: 2;
+	}
+	/*.center #sun{
+		background-image: url("sunny-winter.jpg");
+	}
+	.center #thunder{
+		background-image: url("thunder");
+	}*/
+	.overview {
+		display: flex;
+		justify-content: center;
+		color: #fffff0
+	}
+	main {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		background-size: cover;
+	}
+	body {
+		background-color: salmon;
+	}
+	.weather {
+		display: ;
+		justify-content: center;
+		font-size: 1.5em;
+	}
+}

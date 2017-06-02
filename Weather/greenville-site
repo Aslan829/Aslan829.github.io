@@ -26,19 +26,19 @@
 		</ul>
 	</nav>
 	<main>
-		<div class="center" id="sun">
+		<div class="center">
 			<section class="overview">
 				<h2>Franklin, ID</h2>
 			</section>
 			<section class="cur_conditions">
 				<h3 id="current-temp">79</h3>
-				<p><img id="weather-pic" src="css/sun-clipart.jpg" alt=weather>90/66</p>
+				<p>&#9728; 90/66</p>
 				<br>
 			</section>
 			<h3 class="weather">Sunny</h3>
 		</div>
 		<section class="cur_conditions1">
-			<h2><img id="weather-pic" src="css/sun-clipart.jpg" alt=weather>Current Conditions</h2>
+			<h2>Current Conditions</h2>
 			<section class="wind">
 				<h3 id="wind-title">Wind:</h3>
 				<div id="wind-info">
@@ -53,7 +53,7 @@
 			</section>
 		</section>
 		<section class="hourly">
-			<h2 id="title"><img id="weather-pic" src="css/sun-clipart.jpg" alt=weather> Hourly Forcast</h2>
+			<h2>&#9728; Hourly Forcast</h2>
 			<ul>
 				<li>12:00 AM : 67</li>
 				<li>1:00 AM : 67</li>
