@@ -8,6 +8,9 @@
 
 /*phone screen*/
 
+
+/*universal info for bottom of screen*/
+
 footer {
 	background-color: #a6d8db;
 	font-family: helvetica, arial, sans-serif;
@@ -15,36 +18,48 @@ footer {
 	padding-bottom: 80px;
 }
 
+
+/* general settings for normal footer link*/
+
 footer a:link {
 	text-decoration: none;
 	color: #47556f;
 }
+
+
+/* Settings for visited link*/
 
 footer a:visited {
 	text-decoration: none;
 	color: #4a4653;
 }
 
+
+/*Settings for hovering link*/
+
 footer a:hover {
 	text-decoration: underline;
 	color: #e7ef61;
 }
+
+
+/*settings for active link such as when clicked*/
 
 footer a:active {
 	text-decoration: none;
 	color: #a6d8db;
 }
 
+
+/*Location of logo*/
+
 header {
 	background-color: #a6d8db;
 	display: flex;
-	flex-direction: space-arou
 }
 
-.title h1+h1 {
-	text-align: right;
-	margin-top: -.7em;
-}
+
+/*Navigation bar settings*/
 
 nav {
 	background-color: #f07c6c;
@@ -56,35 +71,54 @@ nav {
 	justify-content: space-around;
 }
 
+
+/*List of links in nav bar*/
+
 nav ul {
 	display: flex;
 	justify-content: space-around;
 	font-size: 15px;
 }
 
+
+/*Settings for each list*/
+
 nav li {}
+
+
+/*settings for normal link*/
 
 nav a:link {
 	text-decoration: none;
 	color: #47556f;
 }
 
+
+/*settings for visited link*/
+
 nav a:visited {
 	text-decoration: none;
 	color: #4a4653;
 }
+
+
+/*settings for hovering over link*/
 
 nav a:hover {
 	text-decoration: underline;
 	color: #e7ef61;
 }
 
+
+/*settings for when link is active*/
+
 nav a:active {
 	text-decoration: none;
 	color: #a6d8db;
 }
 
-section {}
+
+/*Area where weather info is held*/
 
 main {
 	display: flex;
@@ -93,26 +127,42 @@ main {
 	background-size: cover;
 }
 
+
+/*settings for thunder background in mobile*/
+
 #thunder-mobile {
 	background-image: url("thunder.jpg");
 }
 
+
+/*settings for sunny background in mobile*/
+
 #sunny-mobile {
 	background-image: url("sunny-winter.jpg");
 }
+
+
+/*size settings for weather pics throughout page*/
 
 #weather-pic {
 	height: 30px;
 	width: 30px;
 }
 
-figcaption {}
+
+/*Class that discusses wind*/
 
 .wind {
 	display: flex;
+	flex-direction: row;
 	justify-content: space-around;
 }
 
+
+/*information in wind class*/
+.wind #title{
+	
+}
 .wind #wind-info {
 	display: flex;
 	flex-direction: column;
@@ -120,10 +170,16 @@ figcaption {}
 	text-align: right;
 }
 
+
+/*perceptation area*/
+
 .perc {
 	display: flex;
 	justify-content: space-around;
 }
+
+
+/*info for precipitation class*/
 
 .perc #perc-info {
 	display: flex;
@@ -135,6 +191,9 @@ figure {
 	/*helps with older browsers*/
 }
 
+
+/*heading font*/
+
 h1,
 h2,
 h3,
@@ -144,30 +203,41 @@ h6 {
 	font-family: sansita, charcoal, fantasy;
 }
 
+
+/*large logo*/
+
 .big-head {
 	display: flex;
 	flex-direction: row;
 	font-size: 40px;
 }
 
+
+/*sub logo*/
+
 .small-head {
 	display: flex;
 	justify-content: flex-end;
 }
 
-.current-info {
-	font-size: 1.5em;
-}
+
+/*settings for current tempature*/
 
 #current-temp {
 	text-align: center;
 	font-size: 1.8em;
 }
 
+
+/*rotating dice on logo*/
+
 .rotate25 {
 	transform: rotate(30deg);
 	/*display: inline-block;*/
 }
+
+
+/*central box with basic info*/
 
 .cur_conditions {
 	font-size: 1.5em;
@@ -177,8 +247,10 @@ h6 {
 	border: 1px solid;
 	border-radius: 5px;
 	justify-content: center;
-	
 }
+
+
+/*area where hold current wind/precipitation info */
 
 .cur_conditions1 {
 	font-size: 1.5em;
@@ -186,12 +258,17 @@ h6 {
 	border: 1px solid;
 	border-radius: 5px;
 	padding: 1px 30px 10px 40px;
-	
 }
+
+
+/* prevents hourly forcast from being seen on mobile*/
 
 .hourly {
 	display: none;
 }
+
+
+/*settings for website*/
 
 body {
 	margin: 0;
@@ -203,51 +280,39 @@ body {
 	width: 100%;
 }
 
+
+/*area current conditions are in, above basic info box*/
+
 .overview {
 	color: #fffff0;
 	text-align: center;
-	display: inline  none;
+	display: inline none;
 }
+
+
+/*Hide current forcast put in desktop setting*/
 
 .weather {
 	display: none;
 }
 
-.curr_conditions {
-	background-image: url("sunny-winter.jpg");
-}
-
-.curr_conditions #thunder {
-	background-image: url("thunder.jpg");
-}
-
 @media only screen and (min-width: 750px) {
 	/*desktop*/
-	footer {
-		background-color: #a6d8db;
-		font-family: helvetica, arial, sans-serif;
-		font-size: 1.6em
-	}
-	header {
-		background-color: #a6d8db;
-	}
-	.title h1+h1 {
-		text-align: right;
-		margin-top: -.7em;
-	}
+	/*static positioning of nav bar*/
 	nav {
 		background-color: #f07c6c;
 		position: static;
 	}
+	/*settings for list of links*/
 	nav ul {
 		display: flex;
 		justify-content: space-around;
 		font-size: 1.2em;
 	}
+	/*aligns links in center*/
 	nav li {
 		text-align: center;
 	}
-	section {}
 	main {
 		display: flex;
 		flex-flow: column nowrap;
@@ -302,7 +367,6 @@ body {
 	}
 	.hourly li {
 		list-style-type: none;
-		
 	}
 	body {
 		margin: 0;
@@ -318,7 +382,7 @@ body {
 		justify-content: center;
 		flex-grow: 3;
 		background-size: cover;
-		width: 33%; 
+		width: 33%;
 		border: 1px solid;
 		border-radius: 5px;
 		justify-content: flex-start;
@@ -358,5 +422,3 @@ body {
 		flex-wrap: wrap;
 	}
 }
-
-
