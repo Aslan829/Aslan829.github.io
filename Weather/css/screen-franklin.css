@@ -206,6 +206,7 @@ body {
 .overview {
 	color: #fffff0;
 	text-align: center;
+	display: inline  none;
 }
 
 .weather {
@@ -320,6 +321,7 @@ body {
 		width: 33%; 
 		border: 1px solid;
 		border-radius: 5px;
+		justify-content: flex-start;
 	}
 	#sun {
 		background-image: url("sunny-winter.jpg");
