@@ -37,6 +37,8 @@ footer a:active {
 
 header {
 	background-color: #a6d8db;
+	display: flex;
+	flex-direction: space-arou
 }
 
 .title h1+h1 {
@@ -89,10 +91,44 @@ main {
 	flex-flow: column nowrap;
 	align-items: center;
 	background-size: cover;
+}
+
+#thunder-mobile {
+	background-image: url("thunder.jpg");
+}
+
+#sunny-mobile {
 	background-image: url("sunny-winter.jpg");
 }
 
+#weather-pic {
+	height: 30px;
+	width: 30px;
+}
+
 figcaption {}
+
+.wind {
+	display: flex;
+	justify-content: space-around;
+}
+
+.wind #wind-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: right;
+}
+
+.perc {
+	display: flex;
+	justify-content: space-around;
+}
+
+.perc #perc-info {
+	display: flex;
+	align-items: flex-end;
+}
 
 figure {
 	display: block;
@@ -111,7 +147,12 @@ h6 {
 .big-head {
 	display: flex;
 	flex-direction: row;
-	font-size: 1.5em;
+	font-size: 40px;
+}
+
+.small-head {
+	display: flex;
+	justify-content: flex-end;
 }
 
 .current-info {
@@ -136,6 +177,7 @@ h6 {
 	border: 1px solid;
 	border-radius: 5px;
 	justify-content: center;
+	
 }
 
 .cur_conditions1 {
@@ -144,6 +186,7 @@ h6 {
 	border: 1px solid;
 	border-radius: 5px;
 	padding: 1px 30px 10px 40px;
+	
 }
 
 .hourly {
@@ -193,12 +236,12 @@ body {
 	}
 	nav {
 		background-color: #f07c6c;
-		position: static; 
+		position: static;
 	}
 	nav ul {
 		display: flex;
-		justify-content:space-around;
-		font-size: 1.2em; 
+		justify-content: space-around;
+		font-size: 1.2em;
 	}
 	nav li {
 		text-align: center;
@@ -239,43 +282,11 @@ body {
 		/*display: inline-block;*/
 	}
 	.cur_conditions {
-		font-size: 1.5em;
-		background-color: rgba(200, 200, 200, .6);
-		padding: 1px 50px 15px 50px;
-		margin: .2em auto;
-		border: 1px solid;
-		border-radius: 5px;
 		align-self: center;
 	}
 	.cur_conditions1 {
-		display: flex;
-		flex-direction: column;
-		align-items: stretch;
-		font-size: 1.5em;
-		background-color: rgba(200, 200, 200, .6);
-		border: 1px solid;
-		border-radius: 5px;
-		order: -1
-	}
-	.wind {
-		display: flex;
-	}
-	.wind #wind-title {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-	.wind #wind-info {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-	.perc {
-		display: flex;
-	}
-	.perc #perc-info {
-		display: flex;
-		align-items: flex-end;
+		order: -1;
+		width: 33%;
 	}
 	.hourly {
 		display: flex;
@@ -286,9 +297,11 @@ body {
 		background-color: rgba(200, 200, 200, .6);
 		border: 1px solid;
 		border-radius: 5px;
+		width: 33%;
 	}
 	.hourly li {
 		list-style-type: none;
+		
 	}
 	body {
 		margin: 0;
@@ -303,8 +316,10 @@ body {
 		flex-direction: column;
 		justify-content: center;
 		flex-grow: 3;
-
 		background-size: cover;
+		width: 33%; 
+		border: 1px solid;
+		border-radius: 5px;
 	}
 	#sun {
 		background-image: url("sunny-winter.jpg");
@@ -314,12 +329,6 @@ body {
 		background-image: url("thunder.jpg");
 		background-size: cover;
 	}
-
-	 .overview {
-		display: flex;
-		justify-content: center;
-		color: #fffff0;
-	}
 	main {
 		display: flex;
 		flex-direction: row;
@@ -327,7 +336,13 @@ body {
 		background-size: cover;
 		align-items: stretch;
 	}
-	#weather-pic{
+	#thunder-mobile {
+		background-image: none;
+	}
+	#sunny-mobile {
+		background-image: none;
+	}
+	#weather-pic {
 		height: 30px;
 		width: 30px;
 	}
@@ -341,4 +356,5 @@ body {
 		flex-wrap: wrap;
 	}
 }
+
 
