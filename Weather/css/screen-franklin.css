@@ -155,19 +155,23 @@ main {
 .wind {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	align-items: baseline;
+	width: 80%
 }
 
 
 /*information in wind class*/
-.wind #title{
-	
+.wind #wind-title{
+	display: flex;
+	justify-content: flex-end;
+	width: 50%;
 }
 .wind #wind-info {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	text-align: right;
+	justify-content: flex-start;
+	width: 50%;
 }
 
 
@@ -175,15 +179,21 @@ main {
 
 .perc {
 	display: flex;
-	justify-content: space-around;
+	align-items: baseline;
+	width 80%;
 }
 
 
 /*info for precipitation class*/
-
+.perc #perc-title{
+	display: flex;
+	justify-content: flex-end;
+	width: 50%;
+}
 .perc #perc-info {
 	display: flex;
-	align-items: flex-end;
+	justify-content: flex-start;
+	width: 50%;
 }
 
 figure {
@@ -253,7 +263,7 @@ h6 {
 /*area where hold current wind/precipitation info */
 
 .cur_conditions1 {
-	font-size: 1.5em;
+	font-size: 20px;
 	background-color: rgba(200, 200, 200, .6);
 	border: 1px solid;
 	border-radius: 5px;
@@ -265,6 +275,7 @@ h6 {
 
 .hourly {
 	display: none;
+	font-size: 20px; 
 }
 
 
@@ -351,14 +362,57 @@ body {
 		align-self: center;
 	}
 	.cur_conditions1 {
+		display: flex;
+		flex-direction: column;
 		order: -1;
 		width: 33%;
+		flex-shrink: 1;
+		
 	}
+	
+	.wind{
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+		justify-content: center;
+		width: 80%;
+		padding-left: 60px;
+	}
+	
+	.wind #wind-title{
+		display: flex;
+		justify-content: flex-end;
+		width 50%;
+	}
+	.wind #wind-info{
+		padding-left: 10px;
+			width: 50%;
+	}
+	
+	.perc{
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+		width: 80%;
+		padding-left: 0;
+		padding-left: 60px;
+	}
+	
+	.perc #perc-title{
+		display: flex;
+		justify-content: flex-end;
+		width 50%;
+	}
+	.perc #perc-info{
+		padding-left: 15px;
+		width: 50%;
+	}
+	
 	.hourly {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		font-size: 1.5em;
+		font-size: 20px; 
 		flex-wrap: nowrap;
 		background-color: rgba(200, 200, 200, .6);
 		border: 1px solid;
