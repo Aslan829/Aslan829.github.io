@@ -180,7 +180,7 @@ main {
 .perc {
 	display: flex;
 	align-items: baseline;
-	width 80%;
+	width: 80%;
 }
 
 
@@ -297,9 +297,11 @@ body {
 .overview {
 	color: #fffff0;
 	text-align: center;
-	display: inline none;
 }
-
+.weather-pic {
+		height: 30px;
+		width: 30px;
+	}
 
 /*Hide current forcast put in desktop setting*/
 
@@ -382,7 +384,7 @@ body {
 	.wind #wind-title{
 		display: flex;
 		justify-content: flex-end;
-		width 50%;
+		width: 50%;
 	}
 	.wind #wind-info{
 		padding-left: 10px;
@@ -401,7 +403,7 @@ body {
 	.perc #perc-title{
 		display: flex;
 		justify-content: flex-end;
-		width 50%;
+		width: 50%;
 	}
 	.perc #perc-info{
 		padding-left: 15px;
@@ -462,9 +464,17 @@ body {
 	#sunny-mobile {
 		background-image: none;
 	}
-	#weather-pic {
+	
+	#weather-conditions {
 		height: 30px;
 		width: 30px;
+	}
+	#weather-hourly {
+		height: 30px;
+		width: 30px;
+	}
+	#weather-city {
+		
 	}
 	body {
 		background-color: salmon;
