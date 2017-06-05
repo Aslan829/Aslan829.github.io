@@ -413,7 +413,7 @@ body {
 	.hourly {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		align-items: center;
 		font-size: 20px; 
 		flex-wrap: nowrap;
 		background-color: rgba(200, 200, 200, .6);
@@ -465,17 +465,6 @@ body {
 		background-image: none;
 	}
 	
-	#weather-conditions {
-		height: 30px;
-		width: 30px;
-	}
-	#weather-hourly {
-		height: 30px;
-		width: 30px;
-	}
-	#weather-city {
-		
-	}
 	body {
 		background-color: salmon;
 	}
