@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>| Weather</title>
+	<meta name="description" content="Weather for Current Location">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="css/screen-franklin.css">
+</head>
+
+<body>
+	<header>
+		<div class="title">
+			<h2 class="big-head"> <span>&#9856;</span><span class="rotate25">&#9861;</span> Feeling Lucky?</h2>
+			<h2 class="small-head">Local Weather</h2>
+		</div>
+	</header>
+	<nav>
+		<ul style="list-style-type:none">
+			<li><a href="index.html" title="Home">Home</a></li>
+			<li><a href="franklin-site.html" title="Franklin-weather">Franklin</a></li>
+			<li><a href="greenville-site.html" title="greenville">Greenville</a></li>
+			<li><a href="#" title="Springfield">Springfield</a></li>
+			<li><a href="#" title="Search">Search</a></li>
+		</ul>
+	</nav>
+	<main id="sunny-mobile">
+		<div class="center" id="sun">
+			<section class="overview">
+				<h2 class="titleCity"><img class="weather-pic" src="css/sun-clipart.jpg" alt=sunny>-</h2>
+			</section>
+			<section class="cur_conditions">
+				<h3 id="current-temp">79</h3>
+				<p><img class="weather-pic" src="css/sun-clipart.jpg" alt=sunny>90/66</p>
+				<br>
+			</section>
+			<h3 class="weather">Sunny</h3>
+		</div>
+		<section class="cur_conditions1">
+			<h2><img class="weather-pic" src="css/sun-clipart.jpg" alt=sunny>Current Conditions</h2>
+			<section class="wind">
+				<div id="wind-title">
+					<h3> Wind:</h3>
+				</div>
+				<div id="wind-info">
+					<p>15-20 MPH <br> West</p>
+				</div>
+			</section>
+			<section class="perc">
+				<h3 id="perc-title">Precipitation:</h3>
+				<p id="perc-info"> 70 in</p>
+
+			</section>
+		</section>
+		<section class="hourly">
+			<h2 id="title"><img class="weather-pic" src="css/sun-clipart.jpg" alt=sunny> Hourly Forcast</h2>
+			<ul>
+				<li>12:00 AM : 67</li>
+				<li>1:00 AM : 67</li>
+				<li>2:00 AM : 69</li>
+				<li>3:00 AM : 69</li>
+				<li>4:00 AM : 69</li>
+				<li>5:00 AM : 70</li>
+				<li>6:00 AM : 69</li>
+				<li>7:00 AM : 72</li>
+				<li>8:00 AM : 74</li>
+				<li>9:00 AM : 77</li>
+				<li>10:00 AM : 79</li>
+				<li>11:00 AM : 81</li>
+				<li>12:00 PM : 84</li>
+				<li>1:00 PM : 86</li>
+				<li>2:00 PM : 88</li>
+				<li>3:00 PM : 90</li>
+				<li>4:00 PM : 90</li>
+				<li>5:00 PM : 85</li>
+				<li>6:00 PM : 83</li>
+				<li>7:00 PM : 79</li>
+				<li>8:00 PM : 74</li>
+				<li>9:00 PM : 70</li>
+				<li>10:00 PM : 68</li>
+				<li>11:00 PM : 66</li>
+			</ul>
+		</section>
+		<p> </p>
+	</main>
+	<footer>
+		&copy;2017 Weather Site
+		<a href="#">Home Page</a>
+
+	</footer>
+<script src="remote_wu.js"></script>
+
+</body>
+
+</html>
