@@ -35,10 +35,10 @@ $(function () {
 				var windSpeed =parsed_json ['current_observation']['wind_mph'];
 				var feelslike =parsed_json ['current_observation']['feelslike_f'];
 				$("#currentTemp").html(Math.round(temp_f) + "&#8457");
-				$("#cityDisplay").text(location+","+state);
+				$("#cityDisplay").text(location+", "+state);
 				$("title").text(location+","+state+" "+"Weather Home");
 				$("#summary").html(summary);
-				$("#add1").html("The windspeed is "+windSpeed+" MPH.");
+				$("#add1").html("The wind speed is "+windSpeed+" MPH.");
 				$("#add2").html("It actually feels like "+ feelslike +"&#8457.");
 				
 			}
