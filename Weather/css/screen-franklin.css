@@ -140,6 +140,9 @@ main {
 #sunny-mobile {
 	background-image: url("sunny-winter.jpg");
 }
+#wrapper{
+	background-color: aliceblue;
+}
 
 
 /*size settings for weather pics throughout page*/
@@ -466,6 +469,11 @@ body {
 	}
 	#sunny-mobile {
 		background-image: none;
+		
+	}
+	#sunny-mob {
+		background-image: none;
+		
 	}
 	
 	body {
