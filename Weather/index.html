@@ -1,23 +1,33 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
-  <meta charset="UTF-8">
-  <title></title>
-  <meta name="viewport" content="width=device-width">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <link rel="stylesheet" href="/Weather/css/screen-franklin.css" type="text/css" media="screen">
+	<meta charset="utf-8">
+	<title>Franklin, ID | Weather</title>
+	<meta name="description" content="Weather for Franklin ID">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="css/screen-franklin.css">
 </head>
-<!-- *********************************************
-* Who Did You Collaborate With On This Assessment?
-* 1. Ashley Offret
-* 2. Vishal Peter
-* 3. Clark Hawkenson
-* 4.Mariah Ashley
-* 5.
-* ******************************************** -->
+
 <body>
-  <div id="wrapper">
+	<header>
+		<div class="title">
+			<h2 class="big-head"> <span>&#9856;</span><span class="rotate25">&#9861;</span> Feeling Lucky?</h2>
+			<h2 class="small-head">Local Weather</h2>
+		</div>
+	</header>
+	<nav>
+		<ul style="list-style-type:none">
+			<li><a href="index.html" title="Home">Home</a></li>
+			<li><a href="franklin-site.html" title="Franklin-weather">Franklin</a></li>
+			<li><a href="greenville-site.html" title="greenville">Greenville</a></li>
+			<li><a href="#" title="Springfield">Springfield</a></li>
+			<li><a href="#" title="Search">Search</a></li>
+		</ul>
+	</nav>
+	<main id="sunny-mobile">
+		
+		<div id="wrapper">
     <header id="page-header"></header>
     <nav id="page-nav"></nav>
     <main id="page-main">
@@ -36,14 +46,15 @@
         </ul>
       </section>
     </main>
-    <footer id="page-footer">
-      <div id="footer-content"></div>
-      <small>Last updated: </small>
-    </footer>
-    <script src="/jsonweather-html/jsonweather-html/scripts/jquery-3.0.0.min.js"></script>
+	<footer>
+		&copy;2017 Weather Site
+		<a href="#">Home Page</a>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="/jsonweather-html/jsonweather-html/scripts/modules.js"></script>
     <script src="/jsonweather-html/jsonweather-html/scripts/remote_wu.js"></script>
-  </div>
+	</footer>
+
+
 </body>
 
 </html>

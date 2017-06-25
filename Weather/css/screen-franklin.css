@@ -332,6 +332,9 @@ body {
 		background-color: salmon;
 		background-image: none;
 	}
+	main ul li{
+		list-style: none;
+	}
 	figcaption {}
 	figure {
 		display: block;
