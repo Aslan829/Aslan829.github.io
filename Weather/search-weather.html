@@ -5,10 +5,10 @@
 	<!-- *********************************************
 * Who Did You Collaborate With On This Assessment?
 * 1. Ashley Offret
-* 2. Vishal Peter
-* 3. Clark Hawkenson
-* 4. Mariah Ashley
-* 5. Trevor Wyman
+* 2. Mariah Ashley 
+* 3. Clarke` Hawkinson
+* 4. Ryan Call
+* 5. Trevor 
 * ******************************************** -->
 	<meta charset="utf-8">
 	<title>Franklin, ID | Weather</title>
@@ -30,16 +30,11 @@
 			<li><a href="franklin-site.html" title="Franklin-weather">Franklin</a></li>
 			<li><a href="greenville-site.html" title="greenville">Greenville</a></li>
 			<li><a href="#" title="Springfield">Springfield</a></li>
-			<li><a href="#" title="Search">Search</a></li>
+			<li><a href="search-weather.html" title="Search">Search</a></li>
 		</ul>
 	</nav>
 	<main id="sunny-mob">
-		
-		<div id="wrapper">
-    <header id="page-header"></header>
-    <nav id=""></nav>
-    <main id="page-main">
-      <section class="weather-container">
+		<section class="sunny-mobile">
         <div id="cover">
           <div id="status">Loading...</div>
         </div>
@@ -48,22 +43,37 @@
         <ul id="current_cond">
           <li id="currentTemp"></li>
           <li id="summary"></li>
-          <li id="add1"></li>
-          <li id="add2"></li>
+          <li id="add1">h</li>
+          <li id="add2"></li>hhh
           <li id="add3"></li>
         </ul>
       </section>
-    </main>
+		
+		<div id="wrapper">
+    <header id="page-header"></header>
+    <nav></nav>
+			<form method="get" action="//autocomplete.wunderground.com/aq" id="srchfrm">
+		<input type="search" name="query" id="query">
+		<input type="submit" name="submit" value="search" id="send">
+	</form>
+			<h2>Search Results</h2>
+			<section id="searchResults">
+			</section>
+			
+   
+      
+		</div>
+ </main>
 	<footer>
 		&copy;2017 Weather Site
 		<a href="#">Home Page</a> 
 		<img src="wulogo.png" alt="WUlogo">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="modules.js"></script>
-    <script src="/jsonweather-html/jsonweather-html/scripts/remote_wu.js"></script>
+    <script src="search-java.js"></script>
 	</footer>
-
-
+	
+	
 </body>
 
 </html>

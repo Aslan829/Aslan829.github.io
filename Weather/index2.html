@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+	<!-- *********************************************
+* Who Did You Collaborate With On This Assessment?
+* 1. Ashley Offret
+* 2. Vishal Peter
+* 3. Clark Hawkenson
+* 4. Mariah Ashley
+* 5. Trevor Wyman
+* ******************************************** -->
+	<meta charset="utf-8">
+	<title>Franklin, ID | Weather</title>
+	<meta name="description" content="Weather for Franklin ID">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="css/screen-franklin.css">
+</head>
+
+<body>
+	<header>
+		<div class="title">
+			<h2 class="big-head"> <span>&#9856;</span><span class="rotate25">&#9861;</span> Feeling Lucky?</h2>
+			<h2 class="small-head">Local Weather</h2>
+		</div>
+	</header>
+	<nav>
+		<ul style="list-style-type:none">
+			<li><a href="index.html" title="Home">Home</a></li>
+			<li><a href="franklin-site.html" title="Franklin-weather">Franklin</a></li>
+			<li><a href="greenville-site.html" title="greenville">Greenville</a></li>
+			<li><a href="#" title="Springfield">Springfield</a></li>
+			<li><a href="#" title="Search">Search</a></li>
+		</ul>
+	</nav>
+	<main id="sunny-mob">
+		
+		<div id="wrapper">
+    <header id="page-header"></header>
+    <nav></nav>
+   
+      <section class="weather-container">
+        <div id="cover">
+          <div id="status">Loading...</div>
+        </div>
+        <h1 id="cityDisplay"></h1>
+        <h2>Current Conditions</h2>
+        <ul id="current_cond">
+          <li id="currentTemp"></li>
+          <li id="summary"></li>
+          <li id="add1"></li>
+          <li id="add2"></li>
+          <li id="add3"></li>
+        </ul>
+      </section>
+		</div>
+ </main>
+	<footer>
+		&copy;2017 Weather Site
+		<a href="#">Home Page</a> 
+		<img src="wulogo.png" alt="WUlogo">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="modules.js"></script>
+    <script src="/jsonweather-html/jsonweather-html/scripts/remote_wu.js"></script>
+	</footer>
+	
+	
+</body>
+
+</html>

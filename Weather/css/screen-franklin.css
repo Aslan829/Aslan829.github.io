@@ -7,8 +7,7 @@
 
 
 /*phone screen*/
-
-
+#curr
 /*universal info for bottom of screen*/
 
 footer {
@@ -17,7 +16,9 @@ footer {
 	font-size: 1.6em;
 	padding-bottom: 80px;
 }
-
+main ul{
+	list-style-type: none;
+}
 
 /* general settings for normal footer link*/
 
@@ -142,9 +143,16 @@ main {
 }
 #page-main{
 	background-color: aliceblue;
+	text-align: center
+}
+current_cond{
+	
 }
 current_cond ul li{
 	list-style: none;
+	text-align: center;
+	
+	
 }
 
 /*size settings for weather pics throughout page*/

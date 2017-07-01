@@ -35,6 +35,8 @@ $(function () {
 				var windSpeed =parsed_json ['current_observation']['wind_mph'];
 				var feelslike =parsed_json ['current_observation']['feelslike_f'];
 				$("#currentTemp").html(Math.round(temp_f) + "&#8457");
+			
+				$("#cityDisplay").html(location+","+state);
 				$(".titleCity").text(location+","+state);
 				$("title").text(location+","+state+" "+"Weather Home");
 				$("#summary").html(summary);
