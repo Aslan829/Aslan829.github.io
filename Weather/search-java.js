@@ -7,9 +7,10 @@ function getData(input) {
 		success: function (data) {
 			console.log(data);
 			var location = data.location.city + ', ' + data.location.state;
-			var temp_f = data.current_observation.temp_f;
-			var tempHigh = data.forecast.simpleforecast.forecastday.high.;
-			//var tempLow= data.simpleforecast.forecastday.low;
+			var temp_f = data.current_observation.temp_f
+			var tempHigh = data.forecast.simpleforecast.forecastday[1].high.fahrenheit;
+			console.log(data.forecast.simpleforecast.high);
+			var tempLow= data.forecast.simpleforecast.forecastday[1].low.fahrenheit
 			console.log('Location:' + location);
 			console.log('temp: ' +temp_f);
 			//Will add connection soon, just need to see if it works
@@ -19,7 +20,7 @@ function getData(input) {
 			$("#currentTemp").html(Math.round(temp_f) + '°F');
 			$("#summary").html(toTitleCase(data.current_observation.weather));
 			$("#status").text("");
-			$("#add1").html("THIS IS"+tempHigh);
+			$("#add1").html(tempHigh+"°F / "+tempLow+'°F');
 			//$("#add2").html("It actually feels like "+feelLike+"°F");
 
 		}
