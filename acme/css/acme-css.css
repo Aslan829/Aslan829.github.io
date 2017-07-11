@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Fresca|Open+Sans');
+
+/* for phone screens*/
+
+#AcmeBody {
+	background-image: url("images/site/background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: 'Open Sans', sans-serif;
+	font-family: "Arial", sans-serif;
+}
+
+#rocket {
+	display: flex;
+	background-image: url(images/site/feature.jpg);
+	background-size: cover;
+	justify-content: flex-end;
+	color: red;
+	padding-right: 20px;
+}
+
+#lower-half {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#rocket ul {
+	list-style: none;
+	background-color: rgba(0, 0, 255, 0.3);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+#recipies {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+#recipies table{
+	text-align: center;
+}
+#recipies table tr:nth-child(odd){
+	background-color: gainsboro;
+}
+
+.food img {
+	width: 30%;
+	
+}
+
+#reviews {
+	width: 50%;
+}
+
+header {
+	background-color: white;
+}
+
+nav {
+	display: flex;
+	background-color: red;
+	color: white;
+	justify-content: space-around;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	justify-content: space-around;
+	padding: 0;
+	
+}
+
+nav ul li {
+	display: flex;
+}
+
+footer {
+	display: flex;
+	text-align: center;
+	background-color: white;
+	border-top-style: solid;
+}
+
+main {
+	display: flex;
+	background-color: white;
+	flex-direction: column;
+}
+
+	#lower-half {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+@media only screen and (min-width:800px) {
+	#rocket {
+		background-size: cover;
+		font-size: 40px;
+	}
+	#lower-half {
+		display: flex;
+		flex-direction: row;
+	}
+	#recipies{
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.food{
+		justify-content: space-around;
+		flex-direction: row;
+	}
+	#reviews{
+		padding-bottom: 60px;
+	}
+	
+}
