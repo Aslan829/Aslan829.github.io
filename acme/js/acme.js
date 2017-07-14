@@ -2,6 +2,7 @@ var selectLink = "";
 var jsonData = null;
 //Gets the links ready
 $(".link").ready(function () {
+	$("title").html("ACME Home");
 	$.ajax({
 		url: "/acme/js/acme.json",
 		dataType: "json",
@@ -24,8 +25,9 @@ $("nav").on("click", "a", function () {
 	if (link !== "Home") {
 		$("#rocket").hide();
 		$("#lower-half").hide();
-		$("#prod").show();;
-
+		$("#prod").show();
+		$("#productTitle").show();
+		
 		$.ajax({
 			url: "/acme/js/acme.json",
 			dataType: "json",
@@ -36,17 +38,22 @@ $("nav").on("click", "a", function () {
 				var summary = (data[link].description);
 				var review = (data[link].reviews);
 				var price = (data[link].price);
-				$("#productImage").html("<img src='" + picPath + "'>");
+				var title = (data[link].name);
+				$("#productImage").html("<img src='" + picPath + "' alt='"+link+" product'>");
 				$("#made").html("<strong>Made By:</strong> " + made);
 				$("#summary").html(summary);
 				$("#review").html("<strong>Reviews:</strong> " + review);
-				$("#price").html("Price: " + price);
+				$("#price").html("<strong>Price: " + price+"</strong>");
+				$("#productTitle").html("<h2>"+title+"</h2>");
+				$("title").html("ACME: "+link);
 			}
 			
 		});
 	} else {
 		$("#rocket").show();
 		$("#lower-half").show();
+		$("#productTitle").hide();
 		$("#prod").hide();
+		$("title").html("ACME Home");
 	}
 });

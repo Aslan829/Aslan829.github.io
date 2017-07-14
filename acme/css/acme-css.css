@@ -35,8 +35,25 @@
 	flex-direction: column;
 	align-items: center;
 }
-#productImage img{
-	width: 70%;
+#prod img{
+		display: block;
+		width: 70%;
+	}
+	#prod{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		
+	}
+	#productInfo{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 50%
+}
+#price{
+	color: red;
+	font-size: 30px;
 	
 }
 
