@@ -18,72 +18,35 @@ $(".link").ready(function () {
 	});
 
 })
-$("#links1").on("click", function () {
-	var link = $(this).find("a").html();
+$("nav").on("click", "a", function () {
+	var link = $(this).text();
 	console.log("the link is:" + link);
-	replacePro(link);
-});
-$("#links2").on("click", function () {
-	var link = $(this).find("a").html();
-	console.log("the link is:" + link);
-	$.ajax({
-		url: "/acme/js/acme.json",
-		dataType: "json",
-		success: function (data) {
-			var picPath= data.Anvils.path;
-			var made = data.Anvils.manufacturer;
-			var summary = data.Anvils.description;
-			var review= data.Anvils.reviews;
-			var price= data.Anvils.price;
-			$("#productImage").html("<img src='"+picPath+"'>");
-			$("#made").html("<strong>Made By:</strong> "+made);
-			$("#summary").html(summary);
-			$("#review").html("<strong>Reviews:</strong> "+review);
-			$("#price").html("Price: "+ price);
-		}
-	});
-	replacePro(link);
-});
-$("#links3").on("click", function () {
-	var link = $(this).find("a").html();
-	console.log("the link is:" + link);
-	$.ajax({
-		url: "/acme/js/acme.json",
-		dataType: "json",
-		success: function (data) {
-			var picPath= data.Explosives.path;
-			var made = data.Explosives.manufacturer;
-			var summary = data.Explosives.description;
-			var review= data.Explosives.reviews;
-			var price= data.Explosives.price;
-			$("#productImage").html("<img src='"+picPath+"'>");
-			$("#made").html("<strong>Made By:</strong> "+made);
-			$("#summary").html(summary);
-			$("#review").html("<strong>Reviews:</strong> "+review);
-			$("#price").html("Price: "+ price);
-		}
-	});
-	replacePro(link);
-});
-$("#links4").on("click", function () {
-	var link = $(this).find("a").html();
-	console.log("the link is:" + link);
-	replacePro(link);
-});
-$("#links5").on("click", function () {
-	var link = $(this).find("a").html();
-	console.log("the link is:" + link);
-	replacePro(link);
-});
-
-function replacePro(link) {
 	if (link !== "Home") {
 		$("#rocket").hide();
 		$("#lower-half").hide();
-		$("#prod").show();
+		$("#prod").show();;
+
+		$.ajax({
+			url: "/acme/js/acme.json",
+			dataType: "json",
+			success: function (data) {
+				console.log(data);
+				var picPath = (data[link].path);
+				var made = (data[link].manufacturer);
+				var summary = (data[link].description);
+				var review = (data[link].reviews);
+				var price = (data[link].price);
+				$("#productImage").html("<img src='" + picPath + "'>");
+				$("#made").html("<strong>Made By:</strong> " + made);
+				$("#summary").html(summary);
+				$("#review").html("<strong>Reviews:</strong> " + review);
+				$("#price").html("Price: " + price);
+			}
+			
+		});
 	} else {
 		$("#rocket").show();
 		$("#lower-half").show();
 		$("#prod").hide();
 	}
-}
+});

@@ -16,18 +16,33 @@
 	background-size: cover;
 	justify-content: flex-end;
 	color: red;
-	padding-right: 20px;
+
 }
+#rocket ul{
+	width: 55%;
+	padding: 0;
+	margin: 0;
+}
+#rocket img{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
 
 #lower-half {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
+#productImage img{
+	width: 70%;
+	
+}
 
 #rocket ul {
 	list-style: none;
-	background-color: rgba(0, 0, 255, 0.3);
+	background-color: rgba(220,220,220,.8);
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -61,21 +76,22 @@ header {
 }
 
 nav {
-	display: flex;
 	background-color: red;
 	color: white;
-	justify-content: space-around;
+	display: flex;
 }
 
 nav ul {
 	display: flex;
-	flex-direction: row;
-	list-style: none;
+	flex-grow: 1;
+	font-size: 15px;
 	justify-content: space-around;
-	padding: 0;
 	
 }
-
+nav a {
+	text-decoration: none;
+	color: white;
+}
 nav ul li {
 	display: flex;
 }
@@ -103,6 +119,9 @@ main {
 		background-size: cover;
 		font-size: 40px;
 	}
+	#rocket ul{
+		width: auto;
+	}
 	#lower-half {
 		display: flex;
 		flex-direction: row;
@@ -118,5 +137,18 @@ main {
 	#reviews{
 		padding-bottom: 60px;
 	}
-	
+	#prod img{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	#prod{
+		display: flex;
+		justify-content: space-around;
+	}
+	#productInfo{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 }
