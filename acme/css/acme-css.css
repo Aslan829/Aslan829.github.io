@@ -1,5 +1,5 @@
+/*@import url('https://fonts.googleapis.com/css?family=Fresca|Open+Sans');*/
 
-/* for phone screens*/
 
 #AcmeBody {
 	background-image: url("images/site/background.jpg");
@@ -15,50 +15,52 @@
 	background-size: cover;
 	justify-content: flex-end;
 	color: red;
-
 }
-#rocket ul{
+
+#rocket ul {
 	width: 55%;
 	padding: 0;
 	margin: 0;
 }
-#rocket img{
+
+#rocket img {
 	width: 100%;
 	padding: 0;
 	margin: 0;
 }
-
 
 #lower-half {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-#prod img{
-		display: block;
-		width: 90%;
-	}
-	#prod{
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-start;
-	}
-	#productInfo{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		width: 70%;
-		
+
+#prod img {
+	display: block;
+	width: 90%;
 }
-#price{
+
+#prod {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+#productInfo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 70%;
+}
+
+#price {
 	color: red;
 	font-size: 30px;
-	
 }
 
 #rocket ul {
 	list-style: none;
-	background-color: rgba(220,220,220,.8);
+	background-color: rgba(220, 220, 220, .8);
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -71,16 +73,16 @@
 	width: 50%;
 }
 
-#recipies table{
+#recipies table {
 	text-align: center;
 }
-#recipies table tr:nth-child(odd){
+
+#recipies table tr:nth-child(odd) {
 	background-color: gainsboro;
 }
 
 .food img {
 	width: 30%;
-	
 }
 
 #reviews {
@@ -102,12 +104,13 @@ nav ul {
 	flex-grow: 1;
 	font-size: 15px;
 	justify-content: space-around;
-	
 }
+
 nav a {
 	text-decoration: none;
 	color: white;
 }
+
 nav ul li {
 	display: flex;
 }
@@ -125,47 +128,47 @@ main {
 	flex-direction: column;
 }
 
-	#lower-half {
-		display: flex;
-		flex-direction: column-reverse;
-	}
+#lower-half {
+	display: flex;
+	flex-direction: column-reverse;
+}
 
 @media only screen and (min-width:800px) {
 	#rocket {
 		background-size: cover;
 		font-size: 40px;
 	}
-	#rocket ul{
+	#rocket ul {
 		width: auto;
 	}
 	#lower-half {
 		display: flex;
 		flex-direction: row;
 	}
-	#recipies{
+	#recipies {
 		flex-direction: column;
 		justify-content: space-between;
 	}
-	.food{
+	.food {
 		justify-content: space-around;
 		flex-direction: row;
 	}
-	#reviews{
+	#reviews {
 		padding-bottom: 60px;
 	}
-#prod img{
+	#prod img {
 		display: block;
 		width: 90%;
 	}
-	#prod{
+	#prod {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		
 	}
-	#productInfo{
+	#productInfo {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		width: 60%;
+	}
 }
