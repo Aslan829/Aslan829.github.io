@@ -37,19 +37,19 @@
 }
 #prod img{
 		display: block;
-		width: 70%;
+		width: 90%;
 	}
 	#prod{
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
-		
+		align-items: flex-start;
 	}
 	#productInfo{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		width: 50%
+		width: 70%;
+		
 }
 #price{
 	color: red;
@@ -154,18 +154,19 @@ main {
 	#reviews{
 		padding-bottom: 60px;
 	}
-	#prod img{
+#prod img{
 		display: block;
-		width: 100%;
-		height: auto;
+		width: 90%;
 	}
 	#prod{
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
+		align-items: center;
+		
 	}
 	#productInfo{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-	}
+		width: 60%;
 }
