@@ -160,20 +160,25 @@ main {
 	#reviews {
 		padding-bottom: 60px;
 	}
-	#prod img {
-		display: block;
-		width: 90%;
-	}
-	#prod {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-	#productInfo {
-		display: flex;
-/*		font-size: 1.5em;*/
-		flex-direction: column;
-/*		justify-content: center;*/
-		width: 60%;
-	}
+	#productImage {
+	display: block;
+	width: 50%;
+}
+#productImage img{
+	display: block;
+}
+
+#prod {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+#productInfo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+	font-size: 32px;
+}
 }
