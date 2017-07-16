@@ -35,27 +35,26 @@
 	align-items: center;
 }
 
-#prod img {
+#productImage {
 	display: block;
-	width: 90%;
+	width: 50%;
+}
+#productImage img{
+	display: block;
+	width: 100%;
 }
 
 #prod {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-}
-#productTitle{
-	padding:0;
-	margin:0;
+	align-items: flex-start;
 }
 
 #productInfo {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	width: 100%;
+	width: 50%;
 }
 
 #price {
