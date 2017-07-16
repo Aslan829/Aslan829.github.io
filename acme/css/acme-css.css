@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fresca|Open+Sans');
+/*@import url('https://fonts.googleapis.com/css?family=Fresca|Open+Sans');*/
 
 
 #AcmeBody {
@@ -170,7 +170,7 @@ main {
 		align-items: center;
 	}
 	#productInfo {
-		font-size 32px;
+		font-size: 1.5em;
 		display: flex;
 		
 		flex-direction: column;
