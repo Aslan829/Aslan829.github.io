@@ -42,7 +42,7 @@ $("nav").on("click", "a", function () {
 				$("#productImage").html("<img src='" + picPath + "' alt='"+link+" product'>");
 				$("#made").html("<strong>Made By:</strong> " + made);
 				$("#summary").html(summary);
-				$("#review").html("<strong>Reviews:</strong> " + review);
+				$("#review").html("<strong>Reviews:</strong> " + review+"/5 Stars");
 				$("#price").html("<strong>Price: " + price+"</strong>");
 				$("#productTitle").html("<h2>"+title+"</h2>");
 				$("title").html("ACME: "+link);
