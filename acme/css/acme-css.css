@@ -171,7 +171,7 @@ main {
 	}
 	#productInfo {
 		display: flex;
-		font-size: 1.5em;
+/*		font-size: 1.5em;*/
 		flex-direction: column;
 /*		justify-content: center;*/
 		width: 60%;
